@@ -1,0 +1,69 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Enter your name in Main", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+OrionLib:MakeNotification({
+	Name = "Title!",
+	Content = "Notification content... what will it say??",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Tab = Window:MakeTab({
+	Name = "Tab 1",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Support",
+	Callback = function()
+   		note("BinbinvoGaming","Thank you for using my script")
+      		print("Thank you very much")
+      		print("If you need my help, go to the discord server, I will help you if you want to get the script, go to Youtube Record it as BinbinvoGaming There are many scenarios")
+  	end    
+})
+
+Tab1:AddToggle({
+    Name = "Toggle",
+    Default = true,
+    Save = true,
+    Flag = "toggle"
+})
+
+print(OrionLib.Flags["toggle"].Value)
+
+Tab:AddDropdown({
+	Name = "Dropdown",
+	Default = "1",
+	Options = {"1", "2"},
+	Callback = function(Value)
+		Dropdown:Refresh(List<table>,true)
+		Dropdown:Set("dropdown option")
+	end    
+})
+
+Tab:AddBind({
+	Name = "Bind",
+	Default = Enum.KeyCode.E,
+	Hold = false,
+	Callback = function()
+		Bind:Set(Enum.KeyCode.E)
+	end    
+})
+
+Tab:AddColorpicker({
+	Name = "Colorpicker",
+	Default = Color3.fromRGB(255, 0, 0),
+	Callback = function(Value)
+		ColorPicker:Set(Color3.fromRGB(255,255,255))
+	end	  
+})
+
+Tab:AddToggle({
+	Name = "This is a toggle!",
+	Default = false,
+	Callback = function(Value)
+		CoolToggle:Set(true)
+	end    
+})
+
