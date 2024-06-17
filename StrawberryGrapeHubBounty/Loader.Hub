@@ -1,11 +1,11 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 OrionLib:MakeNotification({
-	Name = "BinbinvoGaming",
-	Content = "Welcome To BinbinvoGaming Hub",
+	Name = "StrawberryGrape Hub",
+	Content = "Welcome To StrawberryGrape Hub",
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
-local Window = OrionLib:MakeWindow({Name = "BinbinvoGaming Hub - Auto Bounty [Beta]", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "StrawberryGrape Hub - Auto Bounty [Beta]", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 
 local Tab = Window:MakeTab({
 	Name = "Main",
