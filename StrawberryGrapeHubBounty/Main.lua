@@ -1,4 +1,12 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+OrionLib:MakeNotification({
+	Name = "StrawberryGrape Hub",
+	Content = "Get Key In Link",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 local Window = OrionLib:MakeWindow({Name = "StrawberryGrape Hub By IloveStrawberry", HidePremium = true, SaveConfig = true, ConfigFolder = "SGHub"})
 
 getgenv().done = false;
@@ -9,13 +17,18 @@ function copy(detail)
 		
 end
 
-
+function notice(noticeinformationtitle, noticeinformation)
+    
 OrionLib:MakeNotification({
-	Name = "StrawberryGrape Hub",
-	Content = "Get Key In Link",
-	Image = "rbxassetid://4483345998",
-	Time = 5
+    
+Name = noticeinformationtitle,
+Content = noticeinformation,
+Image = "rbxassetid://4483345998",
+Time = 5
+
 })
+
+end
 
 _G.Key = "StrawberryGrapeHub_hjsukjsi89198324gg1e09520158263089f89"
 _G.KeyInput = "string"
